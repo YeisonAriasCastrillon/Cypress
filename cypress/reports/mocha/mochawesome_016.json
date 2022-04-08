@@ -1,0 +1,111 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2020-06-16T00:46:09.317Z",
+    "end": "2020-06-16T00:46:39.861Z",
+    "duration": 30544,
+    "testsRegistered": 1,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "605c8eb5-1aee-4765-9eab-1a5035709e81",
+      "title": "",
+      "fullFile": "cypress\\integration\\react.feature",
+      "file": "cypress\\integration\\react.feature",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "318ed8bb-c9f7-4381-aa51-ccc687effc96",
+          "title": "Ingresar a la pagina REACT",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "React Login",
+              "fullTitle": "Ingresar a la pagina REACT React Login",
+              "timedOut": null,
+              "duration": 21749,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach(step =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() =>\n    resolveAndRunAfterHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {
+                "message": "AssertionError: Timed out retrying: Expected to find content: 'Your Feed' but never did.",
+                "estack": "AssertionError: Timed out retrying: Expected to find content: 'Your Feed' but never did.\n    at ReactPage.validateResults (http://react-redux.realworld.io/__cypress/tests?p=cypress\\integration\\react.feature:128:10)\n    at Context.eval (http://react-redux.realworld.io/__cypress/tests?p=cypress\\integration\\react.feature:53:13)\n    at Context.resolveAndRunStepDefinition (http://react-redux.realworld.io/__cypress/tests?p=cypress\\integration\\react.feature:12375:9)\n    at Context.eval (http://react-redux.realworld.io/__cypress/tests?p=cypress\\integration\\react.feature:11717:35)",
+                "diff": null
+              },
+              "uuid": "3b166f98-f42d-44a2-8e84-6bd581c52984",
+              "parentUUID": "318ed8bb-c9f7-4381-aa51-ccc687effc96",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "3b166f98-f42d-44a2-8e84-6bd581c52984"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 21749,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.1.1"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/reports/mocha",
+        "quite": true,
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "5.1.0"
+    }
+  }
+}

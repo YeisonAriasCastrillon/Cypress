@@ -1,0 +1,111 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2020-06-15T19:18:33.437Z",
+    "end": "2020-06-15T19:18:39.311Z",
+    "duration": 5874,
+    "testsRegistered": 1,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "b179b15a-a81a-45cb-acbd-5182830a0301",
+      "title": "",
+      "fullFile": "cypress\\integration\\colorlib.feature",
+      "file": "cypress\\integration\\colorlib.feature",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "dc1ea68e-c5c6-44ee-a8bc-dcda1069519d",
+          "title": "Colorlib",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Colorlib Login",
+              "fullTitle": "Colorlib Colorlib Login",
+              "timedOut": null,
+              "duration": 5361,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach(step =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() =>\n    resolveAndRunAfterHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {
+                "message": "Error: Step implementation missing for: I open Colorlib page",
+                "estack": "Error: Step implementation missing for: I open Colorlib page\n    at Context.resolveAndRunStepDefinition (http://localhost:53185/__cypress/tests?p=cypress\\integration\\colorlib.feature:12240:11)\n    at Context.eval (http://localhost:53185/__cypress/tests?p=cypress\\integration\\colorlib.feature:11579:35)",
+                "diff": null
+              },
+              "uuid": "79aafa1b-2a9e-4a4f-9a67-bbd2e61076b5",
+              "parentUUID": "dc1ea68e-c5c6-44ee-a8bc-dcda1069519d",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "79aafa1b-2a9e-4a4f-9a67-bbd2e61076b5"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 5361,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.1.1"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/reports/mocha",
+        "quite": true,
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "5.1.0"
+    }
+  }
+}
